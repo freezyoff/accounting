@@ -1,0 +1,36 @@
+{
+    "name": "freezyoff/accounting",
+    "description": "Simple Accounting Library",
+    "type": "library",
+    "license": "MIT",
+	"require": {
+        "illuminate/database": "^5.8"
+    },
+    "authors": [
+        {
+            "name": "Akhmad Musa Hadi",
+            "email": "freezyoff@gmail.com"
+        }
+    ],
+	"autoload": {
+        "psr-4": {
+            "Freezyoff\\": "src/"
+        }
+    },
+	"autoload-dev": {
+        "psr-4": {
+            "Freezyoff\\Accounting\\Test\\": "src/Freezyoff/Accounting/Test/"
+        }
+    },
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Freezyoff\\Menu\\ServiceProvider"
+			],
+			"aliases": {
+				"Menu": "Freezyoff\\Menu\\Facade"
+			}
+		}
+	},
+    "minimum-stability": "stable"
+}
